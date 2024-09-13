@@ -1,0 +1,23 @@
+{
+  "name": "react-custom-popover",
+  "version": "1.0.0",
+  "description": "React popover component",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedalatawi/react-custom-popover.git"
+  },
+  "keywords": [
+    "react",
+    "popover"
+  ],
+  "author": "Ahmed Alatawi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmedalatawi/react-custom-popover/issues"
+  },
+  "homepage": "https://github.com/ahmedalatawi/react-custom-popover#readme"
+}
