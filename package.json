@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/ahmedalatawi/react-custom-popover/issues"
   },
-  "homepage": "https://github.com/ahmedalatawi/react-custom-popover#readme"
+  "homepage": "https://github.com/ahmedalatawi/react-custom-popover#readme",
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
 }
