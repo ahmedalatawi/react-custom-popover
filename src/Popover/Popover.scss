@@ -1,0 +1,16 @@
+.popover {
+  background-color: white;
+  border: 1px solid rgb(218, 169, 169);
+  padding: 16px;
+  width: 360px;
+  text-align: center;
+
+  .heading {
+    font-size: 64px;
+  }
+
+  &.popover-secondary {
+    background-color: black;
+    color: white;
+  }
+}
