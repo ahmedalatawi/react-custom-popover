@@ -2,8 +2,13 @@
   "name": "react-custom-popover",
   "version": "1.0.0",
   "description": "React popover component",
-  "main": "index.js",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "files": [
+    "build"
+  ],
   "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs",
     "test": "jest"
   },
   "repository": {
@@ -21,9 +26,17 @@
   },
   "homepage": "https://github.com/ahmedalatawi/react-custom-popover#readme",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "@types/react": "^18.3.5",
+    "postcss": "^8.4.47",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "rollup": "^4.21.3",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "sass": "^1.78.0",
     "typescript": "^5.6.2"
   },
   "peerDependencies": {
