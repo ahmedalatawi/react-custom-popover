@@ -6,7 +6,7 @@ interface Props {
 }
 
 const Container = ({ children }: Props) => {
-  return <div>{children}</div>;
+  return <>{children}</>;
 };
 
 export default Container;
