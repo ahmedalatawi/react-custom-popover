@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "React popover component",
   "main": "build/index.js",
-  "module": "build/index.es.js",
+  "module": "build/index.esm.js",
   "files": [
     "build"
   ],
@@ -12,7 +12,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "prepublishOnly": "yarn build"
   },
   "repository": {
     "type": "git",
