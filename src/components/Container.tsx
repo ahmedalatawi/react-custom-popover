@@ -1,12 +1,12 @@
-import React from "react";
-import { ReactNode } from "react";
+import React from 'react'
+import { ReactNode } from 'react'
 
 interface Props {
-  children: ReactNode;
+  children: ReactNode
 }
 
 const Container = ({ children }: Props) => {
-  return <>{children}</>;
-};
+  return <>{children}</>
+}
 
-export default Container;
+export default Container

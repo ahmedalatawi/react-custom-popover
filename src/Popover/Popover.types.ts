@@ -1,3 +1,3 @@
 export interface PopoverProps {
-  theme: "primary" | "secondary";
+  theme: 'primary' | 'secondary'
 }
