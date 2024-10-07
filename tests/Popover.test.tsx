@@ -1,6 +1,6 @@
 import React from 'react'
-import Popover from '../src/Popover/Popover'
-import { PopoverProps } from '../src/Popover/Popover.types'
+import Popover from '../src/Popover'
+import { PopoverProps } from '../src/types'
 import { render } from '@testing-library/react'
 
 import '@testing-library/jest-dom'
