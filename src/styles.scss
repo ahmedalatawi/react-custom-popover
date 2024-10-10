@@ -1,16 +1,91 @@
-.popover {
-  background-color: white;
-  border: 1px solid rgb(218, 169, 169);
-  padding: 16px;
-  width: 360px;
-  text-align: center;
+.popover-wrapper {
+  position: relative;
+  display: inline-block;
+}
 
-  .heading {
-    font-size: 64px;
+.popover {
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+  &.top {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-  &.popover-secondary {
-    background-color: black;
-    color: white;
+  &.bottom {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &.left {
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &.right {
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.popover-content {
+  white-space: nowrap;
+}
+
+.popover-trigger {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 8px;
+}
+
+.arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+
+  &.top {
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px 8px 0 8px;
+    border-color: #ccc transparent transparent transparent;
+  }
+
+  &.bottom {
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #ccc transparent;
+  }
+
+  &.left {
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 8px 8px 8px 0;
+    border-color: transparent #ccc transparent transparent;
+  }
+
+  &.right {
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 8px 0 8px 8px;
+    border-color: transparent transparent transparent #ccc;
   }
 }

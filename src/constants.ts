@@ -1,11 +1,14 @@
-export enum TriggerType {
-  click = 'click',
-  hover = 'hover'
+export enum PopoverTriggers {
+  CLICK = 'click',
+  HOVER = 'hover'
 }
 
-export enum PopoverPosition {
-  top = 'top',
-  bottom = 'bottom',
-  left = 'left',
-  right = 'right'
+export enum PopoverPlacements {
+  TOP = 'top',
+  BOTTOM = 'bottom',
+  LEFT = 'left',
+  RIGHT = 'right'
 }
+
+export type PopoverTrigger = keyof Record<PopoverTriggers, string>
+export type PopoverPlacement = keyof Record<PopoverPlacements, string>
