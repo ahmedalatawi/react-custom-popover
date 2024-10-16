@@ -1,5 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef } from 'react'
 import { PopoverProps } from './types'
+import useOnClickOutside from './hooks/useOnClickOutside'
 
 import './styles.scss'
 
@@ -15,21 +16,7 @@ function Popover({ children, content, placement }: PopoverProps) {
 
   console.log(placement)
 
-  const handleClickOutside = (event: MouseEvent) => {
-    if (
-      popoverRef.current &&
-      !popoverRef.current.contains(event.target as Node) &&
-      triggerRef.current &&
-      !triggerRef.current.contains(event.target as Node)
-    ) {
-      setIsOpen(false)
-    }
-  }
-
-  useEffect(() => {
-    document.addEventListener('mousedown', handleClickOutside)
-    return () => document.removeEventListener('mousedown', handleClickOutside)
-  }, [])
+  useOnClickOutside(popoverRef, () => setIsOpen(false))
 
   return (
     <div className="popover-wrapper" ref={triggerRef}>
