@@ -2,7 +2,6 @@ import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 import Popover from '../Popover'
-import { PopoverPlacements } from '../constants'
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -20,6 +19,6 @@ export const Playground: Story = {
   args: {
     content: <div>This is the popover content!</div>,
     children: <span>Click Me</span>,
-    placement: PopoverPlacements.TOP
+    placement: 'top'
   }
 }
